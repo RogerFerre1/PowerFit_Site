@@ -1,0 +1,765 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("../img/pag1/fundo_site.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header{
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 25px 0px 25px 25px;
+    width: 100%;
+}
+
+.logo img{
+    height: 60px;
+}
+
+.navbar_links ul{
+    display: flex;
+    list-style-type: none;
+    margin: auto;
+    margin-right: 20px;
+    padding: 0;
+}
+
+.navbar_links li{
+    padding: 5px;
+}
+
+.navbar_links a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+    font-weight: bolder;
+    margin-right: 5px;
+    margin-top: 20px;
+}
+
+.redes_titulo{
+    display: none;
+}
+
+.navbar_button{
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.navbar_button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: 0.6s;
+}
+
+.nav ul li a:hover{
+    color: #eeb600;
+    text-decoration: underline;
+}
+
+.mainlinks li{
+    margin-top: 5px;
+}
+span{
+    color: #eeb600;
+}
+
+#quem_somos{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#quem_somos img{
+    width: 500px;
+    border-radius: 40%;
+    position: absolute;
+    right: 200px;
+    margin-top: 20px;
+}
+
+#h1_q_somos{
+    background-image: linear-gradient(to right, #eeb600 40%, #000000 0% );
+    background-size: 100%;
+    width: 270px;
+    height: 60px;
+    border-radius: 25px;
+    border: 3px solid transparent;
+    transition: .5s;
+    text-decoration: none;
+    text-align: right;
+    margin-top: 20px;
+    margin-left: 600px;
+    padding: 5px;
+}
+
+#quem_somos p{
+    max-width: 50%;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+.container p{
+    text-align: center;
+    font-size: 30px;
+    height: 105px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.main_btn{
+    background-color: #eeb600;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 300px;
+    height: 60px;
+    padding: 20px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: .5s;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-left: 600px;
+}
+
+.main_btn:hover{
+    color: #eeb600;
+    background-color: #000000;
+    border-color: #000000;
+}
+
+#h1_modal{
+    background-image: linear-gradient(to right, #eeb600 38%, #000000 0% );
+    background-size: 100% ;
+    width: 300px;
+    height: 60px;
+    border-radius: 25px;
+    border: 3px solid transparent;
+    transition: .5s;
+    text-decoration: none;
+    text-align: right;
+    padding: 5px;
+    padding-left: 0;
+}
+
+#modalidades{
+    padding: 50px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+#modalidades img{
+    height: 230px;
+    width: 280px;
+    border-top: 40px;
+}
+
+#modalidades h3{
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.modalAcad{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 250px;
+
+}
+
+.musculacao{
+    background-color: #000000;
+    height: 400px;
+    width: 300px;
+    border-radius: 200px;
+    transition: .5s;
+}
+
+.musculacao:hover {
+    background-color: #eeb600;
+    transition: .5s;
+}
+
+
+.fit_dance{
+    background-color: #eeb600;
+    height: 400px;
+    width: 300px;
+    border-radius: 200px;
+    transition: .5s;
+}
+
+.fit_dance:hover {
+    background-color: #000000;
+    transition: .5s;
+}
+
+.muay_thai{
+    background-color: #000000;
+    height: 400px;
+    width: 300px;
+    border-radius: 200px;
+    transition: .5s;
+}
+
+.muay_thai:hover {
+    background-color: #eeb600;
+    transition: .5s;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    font-weight: bold;
+    font-size: 28px;
+    background-color: #000000a2;
+    color: #ffffff;
+    transition: 0.6s;
+}
+
+.next{ right: 0;} 
+
+.prev:hover, .next:hover{
+    background-color: #000000;
+    transition: 0.6s;
+}
+
+.n_text{
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.i_text{
+    position: absolute;
+    background-color: #0000009d;
+    color: #ffffff;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 8px 0px;
+}
+
+.dot_box{
+    text-align: center;
+    padding: 10px;
+}
+
+.dot{
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    margin: 0px 2px;
+    background-color: #727385;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.active, .dot:hover{
+    background-color: #e6e6e6;
+    transition: 0.6s;
+}
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fade{
+    from{ opacity: 0.3; }
+    to{ opacity: 1; }
+}
+
+@keyframes fade{
+    from{ opacity: 0.1; }
+    to{ opacity: 1; }
+}
+
+.carrossel{
+    display: none;
+}
+
+.footer{
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    height: 80px;  
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    justify-content: start;
+    margin-top: 30px;
+}
+
+.footer_logo img{
+    height: 40px;
+}
+
+.footer_redes_sociais ul{
+    display: flex;
+}
+.footer_redes_sociais ul li{
+    list-style-type: none;
+    padding: 5px;
+}
+.foot ul{
+    margin-left: 80px;
+    padding: 0;
+}
+
+.footer p{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: 80px 0px 0px 550px;
+}
+
+@media(max-width:768px){
+    *{
+        width: 100%;
+    }
+
+    body{
+        width: 100%;
+    }
+    .header{
+        width: 800px;
+    }
+    .logo img{
+        width: 200px;
+    }
+    .navbar_button{
+        position: absolute;
+        top: 25px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 35px;
+        height: 25px;
+    }
+
+    .navbar_button .bar{
+        height: 3px;
+        width: 100%;
+        background-color: #ffffff;
+        border-radius: 10px;
+        transition: 0.6s;
+    }
+
+    .bar{
+        width: 800px;
+    }
+
+    .nav.active .navbar_button #top{
+        transform: rotate(45deg) translateY(5px);
+    }
+
+    .nav.active .navbar_button #bottom{
+        transform: rotate(-45deg) translateY(-5px);
+    }
+
+    .navbar_links{
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background-color: #000000;
+        z-index: 999;
+    }
+
+    .navbar_links.active{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar_links ul{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .navbar_links ul li{
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .navbar_links{
+        display: none;
+    }
+
+    .navbar_links.active{
+        display: block;
+    }
+
+    .navbar_links ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar_links ul li{
+        margin: 0 10px;
+    }
+
+    .navbar_links ul li a{
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 16px;
+        transition: 0.3s;
+        font-weight: bold;
+    }
+
+    .navbar_links ul li a:hover{
+        color: #eeb600;
+        text-decoration: underline;
+    }
+
+    .redes_sociais{
+        border-top: solid 1px #ffffff;
+    }
+
+    .redes_sociais img{
+        display: none;
+    }
+
+    .redes_sociais ul{
+        list-style-type: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .redes_sociais ul li{
+        margin: 0 5px;
+    }
+
+    .redes_sociais ul li a{
+        display: block;
+    }
+
+    .redes_sociais ul li a img{
+        width: 32px;
+        height: 32px;
+    }
+
+    .redes_titulo{
+        display: block;
+    }
+
+    #quem_somos{
+        width: 100%;
+    }
+
+    #quem_somos img{
+        width: 250px;
+        clear: both;
+        margin-top: 130px;
+        right: 100px;
+    }
+
+    #h1_q_somos{
+        margin-top: 20px;
+        margin-left: 250px;
+        margin-bottom: 80px;
+    }
+    #quem_somos p{
+        font-size: 20px;
+        text-align: right;
+        width: 40%;
+        margin: 0;
+        margin-left: 70px;
+    }
+
+    .main_btn{
+        margin-left: 200px;
+    }
+    
+    #h1_modal{
+        margin-left: 180px;
+    }
+
+    #modalidades img{
+        width: 200px;
+        height: 120px;
+        margin-top: 30px;
+    }
+
+    .modalAcad{
+        gap: 10px;
+        margin-top: 150px;
+        margin-right: 0px;
+        width: 100%;
+    }
+
+    .musculacao{
+        height: 280px;
+        width: 200px;
+    }
+
+    .fit_dance{
+        height: 280px;
+        width: 200px;
+
+    }
+
+    .muay_thai{
+        height: 280px;
+        width: 200px;
+
+    }
+
+    .footer{
+        width: 800px;
+    }
+    .footer_logo img{
+        margin-top: 10px;
+        width: 150px;
+    }
+
+    .footer_redes_sociais{
+        display: none;
+    }
+
+    .footer p{
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 60px;
+        margin-right: 200px;
+        margin-bottom: 0;
+        margin-left: 0px;
+    }
+
+    #top, #bottom{
+        transform-origin: left;
+    }
+
+    .nav.active .navbar_button #top{
+        transform: rotate(37deg);
+        transition: 0.6s;
+    }
+
+    .nav.active .navbar_button #center{
+        opacity: 0;
+        transition: 0.6s;
+    }
+
+    .nav.active .navbar_button #bottom{
+        transform: rotate(-37deg);
+        transition: 0.6s;
+    }
+}
+
+@media(max-width:320px){
+    *{
+       width: 100%;
+    }
+
+    body{
+        width: 100%;
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo img{
+        width: 150px;
+        height: 50px;
+        margin-left: -30px;
+    }
+
+    .navbar_button{
+        right: 20px;
+    }
+
+    .navbar_links ul li{
+        margin: 5px 0;
+    }
+
+    .header{ 
+        width: 320px;
+    } 
+
+    #quem_somos{
+        width: 100%;
+    }
+
+    #quem_somos img{
+        width: 300px;
+        clear: both;
+        margin-top: 130px;
+        right: 10px;
+    }
+
+    #h1_q_somos{
+        margin-top: 20px;
+        margin-left: 25px;
+        margin-bottom: 80px;
+    }
+
+    #quem_somos p{
+        font-size: 30px;
+        text-align: left;
+        width: 200%;
+        margin-left: 70px;
+        margin-top: 250px;
+        margin-bottom: 100px;
+    }
+
+    .main_btn{
+        width: 180px;
+        margin-left: 70px;
+        margin-top: 500px;
+        padding: 10px;
+    }
+
+    #h1_modal{
+        width: 300px;
+        margin-left: -40px;
+        margin-bottom: 60px;
+    }
+
+    #modalidades img{
+        width: 200px;
+        height: 120px;
+        margin-top: 30px;
+    }
+
+    #modalidades .carrossel .musculacao h3{
+        position: relative;
+        top: 50px;
+    }
+
+    #modalidades .carrossel .fit_dance h3{
+        position: relative;
+        top: 50px;
+    }
+
+    #modalidades .carrossel .muay_thai h3{
+        position: relative;
+        top: 50px;
+    }
+
+    .modalAcad{
+        gap: 10px;
+        margin-top: 150px;
+        margin-right: 0px;
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .carrossel{
+        display: block;
+    }
+
+    .carrossel img{
+        margin-bottom: -180px;
+    }
+
+
+    .fade{
+        margin-left: 10px;
+    }
+
+    .prev{ left: 0; }
+    .next{ right: 0;} 
+
+    .prev, .next{
+        margin-top: 1250px;
+        
+    }
+   
+    .modal{
+        display: none;
+    }
+    .equipamentos{
+        width: 100%;
+        margin-top: 180px;
+
+    }
+
+    .footer{
+        width: 320px;
+        height: 80px;
+    }
+
+    .footer_logo img{
+        width: 250px;
+        height: 50px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .footer_redes_sociais ul{
+        display: none;
+    }
+
+
+    .footer p{
+        display: none;
+    }
+}
